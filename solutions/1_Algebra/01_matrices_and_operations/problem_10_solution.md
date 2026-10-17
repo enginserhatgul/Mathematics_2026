@@ -133,7 +133,7 @@ $$
 
 We compare the matrix product $AB$ with the column vectors $Ab_1$ and $Ab_2$:
 
-- The first column of $AB$ is:
+The first column of $AB$ is:
 
 $$
 \begin{pmatrix}
@@ -142,7 +142,7 @@ $$
 \end{pmatrix} = Ab_1.
 $$
 
-- The second column of $AB$ is:
+The second column of $AB$ is:
 
 $$
 \begin{pmatrix}

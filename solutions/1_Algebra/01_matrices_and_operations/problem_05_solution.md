@@ -25,7 +25,8 @@ Matrix $A$ has size $2\times 2$ and vector $x$ has size $2\times 1$. The product
 Using the row-by-column dot product definition:
 
 $$
-Ax=
+\begin{aligned}
+Ax &=
 \begin{pmatrix}
 2 & -1 \\
 1 & 3 \\
@@ -33,19 +34,20 @@ Ax=
 \begin{pmatrix}
 4 \\
 2 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 2(4) + (-1)(2) \\
 1(4) + 3(2) \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 8 - 2 \\
 4 + 6 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 6 \\
 10 \\
 \end{pmatrix}.
+\end{aligned}
 $$
 
 ### 2. Linear Combination of Columns
@@ -69,46 +71,41 @@ The coordinates of vector $x$ are $x_1=4$ and $x_2=2$.
 Forming the linear combination of the columns with scalar weights $x_1$ and $x_2$:
 
 $$
-x_1 a_1 + x_2 a_2=
-4
+\begin{aligned}
+x_1 a_1 + x_2 a_2 &= 4
 \begin{pmatrix}
 2 \\
 1 \\
-\end{pmatrix}
-+ 2
+\end{pmatrix} + 2
 \begin{pmatrix}
 -1 \\
 3 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 4\cdot 2 \\
 4\cdot 1 \\
-\end{pmatrix}
-+ \begin{pmatrix}
+\end{pmatrix} +
+\begin{pmatrix}
 2\cdot(-1) \\
 2\cdot 3 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 8 \\
 4 \\
-\end{pmatrix}
-+ \begin{pmatrix}
+\end{pmatrix} +
+\begin{pmatrix}
 -2 \\
 6 \\
-\end{pmatrix}.
-$$
-
-Adding the vectors yields:
-
-$$
-\begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 8 + (-2) \\
 4 + 6 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 6 \\
 10 \\
 \end{pmatrix}.
+\end{aligned}
 $$
 
 ### 3. Comparison and Explanation

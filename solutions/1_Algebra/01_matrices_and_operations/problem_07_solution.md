@@ -39,7 +39,8 @@ $$
 Computing $AI$:
 
 $$
-AI=
+\begin{aligned}
+AI &=
 \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
@@ -47,21 +48,24 @@ AI=
 \begin{pmatrix}
 1 & 0 \\
 0 & 1 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 2(1)+1(0) & 2(0)+1(1) \\
 0(1)+2(0) & 0(0)+2(1) \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
-\end{pmatrix} = A.
+\end{pmatrix} \\
+&= A.
+\end{aligned}
 $$
 
 Computing $IA$:
 
 $$
-IA=
+\begin{aligned}
+IA &=
 \begin{pmatrix}
 1 & 0 \\
 0 & 1 \\
@@ -69,15 +73,17 @@ IA=
 \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 1(2)+0(0) & 1(1)+0(2) \\
 0(2)+1(0) & 0(1)+1(2) \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
-\end{pmatrix} = A.
+\end{pmatrix} \\
+&= A.
+\end{aligned}
 $$
 
 ### 2. Operation with Zero Matrix $0$
@@ -85,23 +91,26 @@ $$
 Computing $A+0$:
 
 $$
-A+0=
+\begin{aligned}
+A+0 &=
 \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
-\end{pmatrix}
-+ \begin{pmatrix}
+\end{pmatrix} +
+\begin{pmatrix}
 0 & 0 \\
 0 & 0 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 2+0 & 1+0 \\
 0+0 & 2+0 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
-\end{pmatrix} = A.
+\end{pmatrix} \\
+&= A.
+\end{aligned}
 $$
 
 ### 3. Successive Powers of $A$
@@ -109,7 +118,8 @@ $$
 Computing $A^2 = AA$:
 
 $$
-A^2=
+\begin{aligned}
+A^2 &=
 \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
@@ -117,21 +127,23 @@ A^2=
 \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 2(2)+1(0) & 2(1)+1(2) \\
 0(2)+2(0) & 0(1)+2(2) \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 4 & 4 \\
 0 & 4 \\
 \end{pmatrix}.
+\end{aligned}
 $$
 
 Computing $A^3 = A^2 A$:
 
 $$
-A^3=
+\begin{aligned}
+A^3 &=
 \begin{pmatrix}
 4 & 4 \\
 0 & 4 \\
@@ -139,15 +151,16 @@ A^3=
 \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 4(2)+4(0) & 4(1)+4(2) \\
 0(2)+4(0) & 0(1)+4(2) \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 8 & 12 \\
 0 & 8 \\
 \end{pmatrix}.
+\end{aligned}
 $$
 
 ### 4. Roles of $I$ and $0$
@@ -160,39 +173,35 @@ $$
 Examining the computed powers:
 
 $$
-A^1=
+\begin{aligned}
+A^1 &=
 \begin{pmatrix}
 2 & 1 \\
 0 & 2 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 2^1 & 1\cdot 2^0 \\
 0 & 2^1 \\
-\end{pmatrix},
-$$
-
-$$
-A^2=
+\end{pmatrix}, \\
+A^2 &=
 \begin{pmatrix}
 4 & 4 \\
 0 & 4 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 2^2 & 2\cdot 2^1 \\
 0 & 2^2 \\
-\end{pmatrix},
-$$
-
-$$
-A^3=
+\end{pmatrix}, \\
+A^3 &=
 \begin{pmatrix}
 8 & 12 \\
 0 & 8 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} =
+\begin{pmatrix}
 2^3 & 3\cdot 2^2 \\
 0 & 2^3 \\
 \end{pmatrix}.
+\end{aligned}
 $$
 
 The general formula for power $n \ge 1$ is:
@@ -229,20 +238,22 @@ $$
 A^n = (2I + N)^n = (2I)^n + \binom{n}{1}(2I)^{n-1}N + 0 = 2^n I + n 2^{n-1}N.
 $$
 
-Substituting back yields precisely:
+Substituting back yields precisely the general formula for $A^n$:
 
 $$
-A^n=
+\begin{aligned}
+A^n &=
 \begin{pmatrix}
 2^n & 0 \\
 0 & 2^n \\
-\end{pmatrix}
-+ \begin{pmatrix}
+\end{pmatrix} +
+\begin{pmatrix}
 0 & n 2^{n-1} \\
 0 & 0 \\
-\end{pmatrix}
-= \begin{pmatrix}
+\end{pmatrix} \\
+&= \begin{pmatrix}
 2^n & n 2^{n-1} \\
 0 & 2^n \\
 \end{pmatrix}.
+\end{aligned}
 $$
