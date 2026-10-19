@@ -88,9 +88,7 @@ Reversing operation: $R_3\leftarrow R_3-R_1$.
 
 ### 3. Third Row Operation: Interchange $R_2$ and $R_3$
 
-Swap the second and third rows of $A_2$:
-
-The resulting matrix in upper-triangular echelon form is:
+Swap the second and third rows of $A_2$. The resulting matrix in upper-triangular echelon form is:
 
 $$
 A_3=
@@ -119,10 +117,24 @@ $$
 A_3 = E_3 E_2 E_1 A.
 $$
 
-Since every elementary matrix is invertible:
+Since every elementary matrix is invertible, the original matrix can be recovered by multiplying by the inverse matrices in reverse order:
 
 $$
 A = E_1^{-1} E_2^{-1} E_3^{-1} A_3.
 $$
 
-Because elementary row operations are invertible, they preserve the row space and guarantee that the solution set of any corresponding linear system of equations remains unchanged.
+Because elementary row operations are invertible, they preserve the row space of the matrix.
+
+Furthermore, when solving a linear system of equations $Ax = b$, each row operation must be applied to both $A$ and $b$ (that is, to the augmented matrix $[A \mid b]$):
+
+$$
+[A \mid b] \xrightarrow{E} [EA \mid Eb].
+$$
+
+Because each elementary matrix $E$ is invertible (with inverse $E^{-1}$), the transformation is reversible:
+
+$$
+Ax = b \iff (EA)x = Eb.
+$$
+
+Therefore, for $Ax = b$, applying each row operation to both $A$ and $b$ (the augmented matrix) preserves the solution set of the system.
